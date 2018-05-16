@@ -43,7 +43,7 @@ int rotate(int* nums, int numsSize, int k) {
     if(k<0)
         return -1;
     if(k>=numsSize)
-        k%=numsSize;
+        k %= numsSize;
     for(i=0; i<k; i++){
         tmpnum = nums[numsSize-1];
         for(j=numsSize-1; j>0; j--){
@@ -53,4 +53,3 @@ int rotate(int* nums, int numsSize, int k) {
     }
     return 1;
 }
-
